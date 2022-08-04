@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE> INSTALLATION GUIDE FOR Smart PHP Poll </TITLE>
+<LINK 
+href="style.css" 
+type=text/css rel="stylesheet">
+</HEAD>
+<BODY>
+<table width=100%><TR><td width=100% bgcolor=#6666FF height=60>&nbsp;<FONT SIZE="6" COLOR="#FFFFF"><B>Smart PHP Poll</B></FONT></td></tr><tr><td><HR></td></tr></table>
+<table cellpadding=3 cellspacing=4 border=0><TR><td><u><b><font size=4>Installation Guide</font></b></u></td></TR>
+<TR>
+<TD style="line-height: 1.5;font-size: 14px;">
+Follow the simple and easy steps to have Smart PHP Poll running on your server.<BR>
+<B>Step 1: </B>Open conf.txt, provide your database login detail<BR>
+<B>Step 2: </B>Upload all the files into your server.<BR>
+<b>Step 3: </b>Open setup.php in your browser. Click Start Installation button. After seeing successfull installation message, delete the file setup.php from server.<BR>
+<b>Step 4: </b>Open admin.php in your browser. Login using default id: <b>admin</b> and default password: <b>password</b><BR>
+<b>Step 5:</b>Make a new poll in admin panel. You will get an ID after poll creation. Save the ID.<BR>
+<b>Step 6:</b> Add following code where you want poll to display in your webpage:<BR>
+<textarea rows=6 cols=70>
+<SCRIPT LANGUAGE="JavaScript" src="ajax.js">
+</SCRIPT>
+<div id="text"></div>
+<SCRIPT LANGUAGE="JavaScript">
+getpoll('POLL_ID');
+</SCRIPT>
+</textarea>
+<BR>
+You should see the poll on that Webpage.
+<b>POLL_ID</b> is the ID of poll, replace it with your own ID.
+<BR>
+For this code, poll and the webpage must be in same dorectory. If you want to use a differnet directory then specify full path to ajax.js
+<BR>
+You can customize the look of poll from admin panel.
+<BR>
+Administration panel is made user friendly with necessary tips contained within.<BR>
+You will have no trouble in running the administration panel.<BR>NOTE: Please use a standard software for decompressing the contents of zip file, or else you may have some missing folders. We recommend Winzip or Winace.<HR>
+If you have any trouble in running this script, just contact us using contact form at our website.
+<HR><CENTER>Copyright: <a href="http://www.scriptsez.net">Smart PHP Poll</a></CENTER>
+</TD>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,52 @@
+<form id='poll_form' method="post">
+
+<table style="color:#333333;font-family:'Verdana';font-size:13px;"
+	width="260" border="0" cellpadding="2" cellspacing="0">
+
+<tr style='height:30px;'>
+	<td colspan="4" style="font-weight:bold;padding:0px 2px 2px 2px;">
+	Which Movie Do You Like Best?
+	</td>
+</tr>
+
+<!--
+displayBar( Index, Height[px], Color ) : Displays the bar for the votes
+getPercent( Index )                    : Displays the percentage of the votes
+getCount( Indx )                       : Displays the number of the votes
+-->
+<tr style='height:20px;'>
+	<td align='right'>Harry Potter</td>
+	<td align='left' width='100'><?php echo displayBar( 1, 15, "#006000" ); ?></td>
+	<td align='right' width='20'><?php echo getPercent( 1 ); ?>%</td>
+	<td align='right' width='20'><?php echo getCount( 1 ); ?></td>
+</tr>
+
+<tr style='height:20px;'>
+	<td align='right'>Titanic</td>
+	<td align='left' width='100'><?php echo displayBar( 2, 15, "#009000" ); ?></td>
+	<td align='right' width='20'><?php echo getPercent( 2 ); ?>%</td>
+	<td align='right' width='20'><?php echo getCount( 2 ); ?></td>
+</tr>
+
+<tr style='height:20px;'>
+	<td align='right'>Forest Gump</td>
+	<td align='left' width='100'><?php echo displayBar( 3, 15, "#00c000" ); ?></td>
+	<td align='right' width='20'><?php echo getPercent( 3 ); ?>%</td>
+	<td align='right' width='20'><?php echo getCount( 3 ); ?></td>
+</tr>
+
+<tr style='height:20px;'>
+	<td align='right' colspan='4'>
+	<span style='font-weight:bold;'><?php echo $total; ?> votes total<span>
+	</td>
+</tr>
+
+<tr style='height:20px;'>
+	<td align='center' colspan='4'>
+	<input value=" Back " type="submit" onclick="return onBack();" />
+	</td>
+</tr>
+
+</table>
+
+</form>
